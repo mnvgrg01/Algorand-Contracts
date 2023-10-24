@@ -1,0 +1,157 @@
+{
+    "name": "asset",
+    "methods": [
+        {
+            "name": "add_asset_listing",
+            "args": [
+                {
+                    "type": "asset",
+                    "name": "asset"
+                },
+                {
+                    "type": "uint64",
+                    "name": "copies"
+                },
+                {
+                    "type": "uint64",
+                    "name": "price"
+                },
+                {
+                    "type": "uint64",
+                    "name": "lotsize"
+                },
+                {
+                    "type": "uint64",
+                    "name": "coolingtime"
+                },
+                {
+                    "type": "bool",
+                    "name": "primary"
+                }
+            ],
+            "returns": {
+                "type": "void"
+            }
+        },
+        {
+            "name": "get_asset",
+            "args": [
+                {
+                    "type": "asset",
+                    "name": "asset"
+                }
+            ],
+            "returns": {
+                "type": "(uint64,uint64)"
+            }
+        },
+        {
+            "name": "get_listing",
+            "args": [
+                {
+                    "type": "address",
+                    "name": "address"
+                }
+            ],
+            "returns": {
+                "type": "(uint64,uint64,bool)"
+            }
+        },
+        {
+            "name": "get_processid",
+            "args": [],
+            "returns": {
+                "type": "uint64"
+            }
+        },
+        {
+            "name": "purchase_asset",
+            "args": [
+                {
+                    "type": "uint64",
+                    "name": "copies"
+                },
+                {
+                    "type": "asset",
+                    "name": "asset"
+                }
+            ],
+            "returns": {
+                "type": "void"
+            }
+        },
+        {
+            "name": "get_process_record",
+            "args": [
+                {
+                    "type": "uint64",
+                    "name": "processid"
+                }
+            ],
+            "returns": {
+                "type": "(string,uint64,address,address,uint64)"
+            }
+        },
+        {
+            "name": "approve_asset",
+            "args": [
+                {
+                    "type": "uint64",
+                    "name": "processid"
+                }
+            ],
+            "returns": {
+                "type": "void"
+            }
+        },
+        {
+            "name": "mint_asset",
+            "args": [
+                {
+                    "type": "string",
+                    "name": "name"
+                },
+                {
+                    "type": "string",
+                    "name": "url"
+                }
+            ],
+            "returns": {
+                "type": "uint64"
+            }
+        },
+        {
+            "name": "freeze_asset",
+            "args": [
+                {
+                    "type": "asset",
+                    "name": "asset"
+                },
+                {
+                    "type": "uint8",
+                    "name": "freeze"
+                },
+                {
+                    "type": "account",
+                    "name": "account"
+                }
+            ],
+            "returns": {
+                "type": "void"
+            }
+        },
+        {
+            "name": "optin_asset",
+            "args": [
+                {
+                    "type": "asset",
+                    "name": "asset"
+                }
+            ],
+            "returns": {
+                "type": "void"
+            }
+        }
+    ],
+    "networks": {}
+}
